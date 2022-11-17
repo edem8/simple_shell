@@ -1,44 +1,47 @@
-# simple_shell
+# A BASIC LINUX INTERPRETER
 
-# A simple C shell project
+## Compilation and Usage
 
-## Description
+### 1. Compilation
+* First clone the repository.
+> `
+> git clone https://<YOUR_PAT>@github.com/alexUd01/simple_shell.git
+`
+* After cloning the repository, change your current working directory to the just cloned directory and compile the source files using the following commands.
+did just that
 
-This is a simple UNIX command interpreter that replicates functionalities of the simple shell (sh). Additional functions are also included. This program was written entirely in C as a milestone project for Alx-Holberton School.
+> ```
+> (alex@Xandex-PC)-[~]
+> -$ cd simple_shell
+>
+> (alex@Xandex-PC)-[~/simple_shell]
+> -$ gcc *.c -o hsh
+>
+> (alex@Xandex-PC)-[~/simple_shell]
+> -$
+> ```
 
-## Installation
 
-Clone this repository into your working directory. Files should be compiled with GCC and the following flags: -Wall -Wextra -Werror -pedantic -Wno-format.
+### 2. Usage
+* To run simply type ./hsh
+> ```
+> (alex@Xandex-PC)-[~/simple_shell]
+> -$ ./hsh
+> $
+> ```
 
-## Usage
+* To exit just type `exit` or hit 'Ctrl+D'.
 
-After compilation, the resulting program can run stand-alone, either in interactive or non-interactive mode.
+## Unsuported features
 
-## Interactive Mode
+* The following features have not yet been implemented
+  1. Shell I/O Redirection
+  2. Piping
+* and some other features.
 
-In interactive mode, simply run the program and wait for the prompt to appear. From there, you can type commands freely, exiting with either the "exit" command or ctrl-D.
-
-## Non-Interactive Mode
-
-In non-interactive mode, echo your desired command and pipe it into the program like this:
-
-echo "ls" | ./shell
-In non-interactive mode, the program will exit after finishing your desired command(s).
-
-This is the man page which contains all functions and descriptions of all the functions used in this Simple shell project. To access this page, Do:
-
-## AUTHORS
-
-This file contains the details of all the individuals that contributed to this shell project.
-
-## Features
-
-1. DIsplay a prompt and wait for the user to type a command. A command-line always ends with a new line.
-2. The prompt is displayed again each time a command has been executed.
-3. The command lines are simple, no semicolons, no pipes, no redirections, or any other advanced features.
-4. The command lines are made only of one word.No arguement will be passed to the programs.
-5.If an executable is not found the shell prints an error message and displayu the prompt again.
-
-## Credits
-
-All codes written by Edem K. Bless and Nana Obeng.
+# For Contributors
+* To push back to the repo do the following
+```
+(alex@Xandex-PC)-[~/simple_shell]
+-$ git push -u origin master
+```
